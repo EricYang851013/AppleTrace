@@ -9,33 +9,22 @@
 /* Begin PBXBuildFile section */
 		D17E99EB1F72DFC20034AAE7 /* appletrace.h in Headers */ = {isa = PBXBuildFile; fileRef = D17E998B1F72DFC20034AAE7 /* appletrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D17E99EC1F72DFC20034AAE7 /* appletrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = D17E998C1F72DFC20034AAE7 /* appletrace.mm */; };
-		D1CC5A382185B70800726C5E /* hook_objc_msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CC5A372185B70800726C5E /* hook_objc_msgSend.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D17E99ED1F72DFC20034AAE7 /* load.m in Sources */ = {isa = PBXBuildFile; fileRef = D17E998E1F72DFC20034AAE7 /* load.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D1891C75202DFE90001CB5DF /* apt_hooker.c in Sources */ = {isa = PBXBuildFile; fileRef = D1891C74202DFE90001CB5DF /* apt_hooker.c */; };
+		D1891C78202DFE9D001CB5DF /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D1891C76202DFE9D001CB5DF /* fishhook.c */; };
+		D1891C79202DFE9D001CB5DF /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = D1891C77202DFE9D001CB5DF /* fishhook.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D1CC5A332185B6B700726C5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D1CC5A2F2185B6B700726C5E /* HookZz.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 865F5FD01F6123390000622F;
-			remoteInfo = HookZz;
-		};
-		D1CC5A352185B6BE00726C5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D1CC5A2F2185B6B700726C5E /* HookZz.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 865F5FCF1F6123390000622F;
-			remoteInfo = HookZz;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D17E997F1F72DF300034AAE7 /* appletrace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = appletrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17E99831F72DF300034AAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D17E998B1F72DFC20034AAE7 /* appletrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appletrace.h; sourceTree = "<group>"; };
 		D17E998C1F72DFC20034AAE7 /* appletrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = appletrace.mm; sourceTree = "<group>"; };
-		D1CC5A2F2185B6B700726C5E /* HookZz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HookZz.xcodeproj; path = ../hookzz/ios/HookZz.xcodeproj; sourceTree = "<group>"; };
-		D1CC5A372185B70800726C5E /* hook_objc_msgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hook_objc_msgSend.m; sourceTree = "<group>"; };
+		D17E998E1F72DFC20034AAE7 /* load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = load.m; sourceTree = "<group>"; };
+		D1891C74202DFE90001CB5DF /* apt_hooker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = apt_hooker.c; sourceTree = "<group>"; };
+		D1891C76202DFE9D001CB5DF /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		D1891C77202DFE9D001CB5DF /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		D1891C7A202E0133001CB5DF /* apt_hooker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apt_hooker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +41,6 @@
 		D17E99751F72DF2F0034AAE7 = {
 			isa = PBXGroup;
 			children = (
-				D1CC5A2F2185B6B700726C5E /* HookZz.xcodeproj */,
 				D17E99811F72DF300034AAE7 /* appletrace */,
 				D17E99801F72DF300034AAE7 /* Products */,
 			);
@@ -88,17 +76,13 @@
 		D17E998D1F72DFC20034AAE7 /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				D1CC5A372185B70800726C5E /* hook_objc_msgSend.m */,
+				D17E998E1F72DFC20034AAE7 /* load.m */,
+				D1891C7A202E0133001CB5DF /* apt_hooker.h */,
+				D1891C74202DFE90001CB5DF /* apt_hooker.c */,
+				D1891C76202DFE9D001CB5DF /* fishhook.c */,
+				D1891C77202DFE9D001CB5DF /* fishhook.h */,
 			);
 			path = objc;
-			sourceTree = "<group>";
-		};
-		D1CC5A302185B6B700726C5E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D1CC5A342185B6B700726C5E /* HookZz.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17E99EB1F72DFC20034AAE7 /* appletrace.h in Headers */,
+				D1891C79202DFE9D001CB5DF /* fishhook.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +112,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D1CC5A362185B6BE00726C5E /* PBXTargetDependency */,
 			);
 			name = appletrace;
 			productName = appletrace;
@@ -140,7 +124,7 @@
 		D17E99761F72DF2F0034AAE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = everettjf;
 				TargetAttributes = {
 					D17E997E1F72DF300034AAE7 = {
@@ -160,28 +144,12 @@
 			mainGroup = D17E99751F72DF2F0034AAE7;
 			productRefGroup = D17E99801F72DF300034AAE7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D1CC5A302185B6B700726C5E /* Products */;
-					ProjectRef = D1CC5A2F2185B6B700726C5E /* HookZz.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D17E997E1F72DF300034AAE7 /* appletrace */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D1CC5A342185B6B700726C5E /* HookZz.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = HookZz.framework;
-			remoteRef = D1CC5A332185B6B700726C5E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D17E997D1F72DF300034AAE7 /* Resources */ = {
@@ -198,20 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1CC5A382185B70800726C5E /* hook_objc_msgSend.m in Sources */,
+				D1891C78202DFE9D001CB5DF /* fishhook.c in Sources */,
+				D17E99ED1F72DFC20034AAE7 /* load.m in Sources */,
+				D1891C75202DFE90001CB5DF /* apt_hooker.c in Sources */,
 				D17E99EC1F72DFC20034AAE7 /* appletrace.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D1CC5A362185B6BE00726C5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HookZz;
-			targetProxy = D1CC5A352185B6BE00726C5E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D17E99851F72DF300034AAE7 /* Debug */ = {
@@ -224,23 +186,15 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -284,23 +238,15 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

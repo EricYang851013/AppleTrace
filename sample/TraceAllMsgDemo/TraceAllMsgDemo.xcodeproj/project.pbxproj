@@ -15,7 +15,7 @@
 		D17E9A891F72E5950034AAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17E9A871F72E5950034AAE7 /* LaunchScreen.storyboard */; };
 		D1C3036B1F72E5BE00D5A48D /* appletrace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17E9A951F72E59F0034AAE7 /* appletrace.framework */; };
 		D1C3036E1F72E5F100D5A48D /* ThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C3036D1F72E5F100D5A48D /* ThreadTest.m */; };
-		D1CC5A3B2185B7DD00726C5E /* appletrace.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D17E9A951F72E59F0034AAE7 /* appletrace.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1F490C21F7A9A460075EC47 /* appletrace.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D17E9A951F72E59F0034AAE7 /* appletrace.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +26,7 @@
 			remoteGlobalIDString = D17E997F1F72DF300034AAE7;
 			remoteInfo = appletrace;
 		};
-		D1CC5A3C2185B83500726C5E /* PBXContainerItemProxy */ = {
+		D17E9A961F72E5A70034AAE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D17E9A901F72E59F0034AAE7 /* appletrace.xcodeproj */;
 			proxyType = 1;
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D1CC5A3B2185B7DD00726C5E /* appletrace.framework in CopyFiles */,
+				D1F490C21F7A9A460075EC47 /* appletrace.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D1CC5A3D2185B83500726C5E /* PBXTargetDependency */,
+				D17E9A971F72E5A70034AAE7 /* PBXTargetDependency */,
 			);
 			name = TraceAllMsgDemo;
 			productName = TraceAllMsgDemo;
@@ -155,7 +155,7 @@
 		D17E9A6E1F72E5950034AAE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = everettjf;
 				TargetAttributes = {
 					D17E9A751F72E5950034AAE7 = {
@@ -227,10 +227,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D1CC5A3D2185B83500726C5E /* PBXTargetDependency */ = {
+		D17E9A971F72E5A70034AAE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = appletrace;
-			targetProxy = D1CC5A3C2185B83500726C5E /* PBXContainerItemProxy */;
+			targetProxy = D17E9A961F72E5A70034AAE7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -264,15 +264,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -313,15 +321,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
